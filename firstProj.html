@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">  
+  </head>
+  <body style="background-color:rgb(46, 139, 87)">
+    <h1 style="font-family: fantasy" color: black >Plastic Bottle Calculator</h1>
+    <img src="https://live.staticflickr.com/8290/7825968422_bcde1abbe9_b.jpg" max width="500" align="right">
+    <h2 style="font-family: Georgia">Number of bottles you use per day</h2>
+    <h2>Enter below </h2>
+    <input type="number"id="input" onchange="handleInput()">
+    <p id="output"></p>
+    <br>
+    <ul>
+      <li>Plastic bottles require up to 700 years to dissolve.</li>
+      <li>90% of the cost of bottled water is the bottle itself.</li>
+      <li>80% of plastic bottles never get recycled.</li>
+      <li>38 million plastic bottles go to landfill each year in America alone.</li>
+      <li>24,000,000 liters of oil is needed to produce these billions of plastic bottles.</li>
+      <li>The average American consumes 167 bottles of water per year.</li>
+      <li>Bottling water and shipping transport is the least energy efficient method of water supply in the history of mankind.</li>
+      <li>Bottled water is the second most popular beverage in the United States.</li>
+    </ul>
+  </body>
+  <script> 
+    var days = 365;
+    function handleInput() {
+      var input = document.getElementById("input").value;
+      var result = input * days;
+      document.getElementById("output").innerHTML = result + " bottles"; 
+    }
+  </script>
+</html>
